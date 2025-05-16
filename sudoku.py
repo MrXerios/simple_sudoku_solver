@@ -270,21 +270,6 @@ class Grid:
             iter += 1
         return self
 
-# class BruteforceGrid(Grid):
-#
-#     def solve(self, max_iter=100):
-#         stack = list()
-#         super().solve()
-#         while not self.isSolved:
-#             self.guess()
-#             super().solve()
-#         return self
-#
-#     @strategy
-#     def guess(self):
-#         raise NotImplementedError()
-
-
 if __name__ == "__main__":
 
     sudoku = '1' + 'x'*80
