@@ -13,11 +13,11 @@ This solver doesn't necessarily solve a sudoku completely since these methods ar
 
 Example use:
 ```
->>> sudoku = "XXX2XX5X9XXX5XXXXX295478XXX15X3X4X9XXX6XXXX5XX74X5X2XXXXXX23X4XX6384XXXX4X8XXX73X"
+sudoku = "XXX2XX5X9XXX5XXXXX295478XXX15X3X4X9XXX6XXXX5XX74X5X2XXXXXX23X4XX6384XXXX4X8XXX73X"
 
->>> g = Grid(sudoku)
+g = Grid(sudoku)
 
->>> g
+g
 xxx | 2xx | 5x9
 xxx | 5xx | xxx
 295 | 478 | xxx
@@ -30,7 +30,7 @@ xxx | x23 | x4x
 x63 | 84x | xxx
 4x8 | xxx | 73x
 
->>> g.solve()
+g.solve()
 647 | 231 | 589
 831 | 569 | 472
 295 | 478 | 163
